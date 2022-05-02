@@ -1,0 +1,49 @@
+[data-reach-dialog-overlay] {
+  position: fixed;
+  background: hsla(0, 0%, 0%, 0.33);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 40;
+}
+
+[data-reach-dialog-content] {
+  width: 50vw;
+  min-width: 300px;
+  margin: 10vh auto;
+  padding: 1.5rem;
+  background: white;
+  outline: none;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.ReactVirtualized__Grid__innerScrollContainer {
+  max-height: 100% !important;
+}
+
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  margin-right: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  transition: background .25s;
+}
+
+.scrollable:hover::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
